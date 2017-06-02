@@ -32,7 +32,7 @@
             '
             Me.btnCalcular_Primo.Location = New System.Drawing.Point(24, 65)
             Me.btnCalcular_Primo.Name = "btnCalcular_Primo"
-            Me.btnCalcular_Primo.Size = New System.Drawing.Size(100, 23)
+            Me.btnCalcular_Primo.Size = New System.Drawing.Size(220, 23)
             Me.btnCalcular_Primo.TabIndex = 0
             Me.btnCalcular_Primo.Text = "CalcularPrimo"
             Me.btnCalcular_Primo.UseVisualStyleBackColor = True
@@ -42,23 +42,24 @@
             Me.lblPrimo.AutoSize = True
             Me.lblPrimo.Location = New System.Drawing.Point(55, 108)
             Me.lblPrimo.Name = "lblPrimo"
-            Me.lblPrimo.Size = New System.Drawing.Size(39, 13)
+            Me.lblPrimo.Size = New System.Drawing.Size(43, 13)
             Me.lblPrimo.TabIndex = 1
-            Me.lblPrimo.Text = "Label1"
+            Me.lblPrimo.Text = "lblPrimo"
+            Me.lblPrimo.Visible = False
             '
             'tbxPrimo
             '
             Me.tbxPrimo.Location = New System.Drawing.Point(23, 28)
             Me.tbxPrimo.MaxLength = 10
             Me.tbxPrimo.Name = "tbxPrimo"
-            Me.tbxPrimo.Size = New System.Drawing.Size(100, 20)
+            Me.tbxPrimo.Size = New System.Drawing.Size(221, 20)
             Me.tbxPrimo.TabIndex = 2
             '
             'App1Form
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(151, 162)
+            Me.ClientSize = New System.Drawing.Size(266, 148)
             Me.Controls.Add(Me.tbxPrimo)
             Me.Controls.Add(Me.lblPrimo)
             Me.Controls.Add(Me.btnCalcular_Primo)
