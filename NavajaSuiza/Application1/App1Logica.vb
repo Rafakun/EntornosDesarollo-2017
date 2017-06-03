@@ -8,6 +8,7 @@
         '''<Summary>
         '''Método Principal, calcula el si el numero del textbox es primo.
         '''</Summary>
+        '''<param name="NPrimo">Pasa el número primo desde el textbox del formulario</param>
         Public Function CalculaPrimo(ByVal NPrimo As String) As String
             Try
                 Dim a As Integer = 0
@@ -24,7 +25,7 @@
                     Return "El número introducido es primo."
                 End If
             Catch ex As Exception
-                Return "No has introducido un número valido."
+                Return "No has introducido un valor valido."
             End Try
         End Function
     End Class
