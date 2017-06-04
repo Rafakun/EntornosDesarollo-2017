@@ -8,23 +8,20 @@
         '''<Summary>
         '''Método Principal, calcula el si el numero del textbox es primo.
         '''</Summary>
-        Public Function CalculaPrimo(ByVal NPrimo As String) As String
+        '''<param name="NumeroIVA">Numero a calcular IVA</param>
+        '''<
+        Public Function CalculaPrimo(ByVal NumeroIVA As Double, ByVal IVA As Integer) As String
             Try
-                Dim a As Integer = 0
-                Dim n As Integer = CInt(NPrimo)
-
-                For i As Integer = 1 To n + 1
-                    If (n Mod i = 0) Then
-                        a = a + 1
-                    End If
-                Next i
-                If (a <> 2) Then
-                    Return "El número introducido NO es primo."
+                Dim n As Double = NumeroIVA
+                If NumeroIVA >= 0 Then
+                    Dim Total = NumeroIVA + NumeroIVA / 100 * IVA
+                    Return "El total con " + IVA.ToString + "% IVA es: " + Total.ToString
                 Else
-                    Return "El número introducido es primo."
+                    Throw New Exception
                 End If
             Catch ex As Exception
-                Return "No has introducido un valor valido."
+                Return "No has introducido" + vbCrLf + "un valor valido."
+                'Aquí registraría un error en una hipotetica base de datos
             End Try
         End Function
     End Class

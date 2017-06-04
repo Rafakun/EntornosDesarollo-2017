@@ -2,7 +2,7 @@
     Public Class MainForm
         Public Sub Hola()
         End Sub
-
+        Public TotalCalculaIva
         ''' <summary>
         ''' Abre el formulario de la App1
         ''' </summary>

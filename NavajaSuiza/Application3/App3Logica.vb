@@ -46,6 +46,7 @@
                 End If
             Catch ex As Exception
                 Return "Error en la introducción del dinero" + ex.Message
+                'Aquí registraría un error en una hipotetica base de datos
             End Try
             Return TextoBilletes
         End Function

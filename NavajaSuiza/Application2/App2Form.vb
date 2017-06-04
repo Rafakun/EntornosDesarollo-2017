@@ -4,6 +4,7 @@
         ''' Declaración de clases
         ''' </summary>
         Dim Aplicacion As New App2Logica
+
         ''' <summary>
         ''' Constructor Form
         ''' </summary>
@@ -18,7 +19,7 @@
             Dim Resultado As Double
             Dim Bool As Boolean = True
             If Double.TryParse(NumAConvertir, Resultado) = False Then
-                lblConvertido.Text = "Error al introducir número."
+                lblConvertido.Text = "El número introducido" + vbCrLf + "no es valido."
                 Bool = False
             End If
             Return Bool
@@ -34,6 +35,7 @@
                 Dim Dinero = tbxDinero.Text
                 If Comprobar(Dinero) Then
                     lblConvertido.Text = Aplicacion.Convertir(Dinero, 0)
+                    btnCalcula_IvaApp4.Visible = True
                 End If
             Catch ex As Exception
                 'Aquí registraría un error en una hipotetica base de datos
@@ -51,12 +53,18 @@
                 Dim Dinero = tbxDinero.Text
                 If Comprobar(Dinero) Then
                     lblConvertido.Text = Aplicacion.Convertir(Dinero, 1)
+                    btnCalcula_IvaApp4.Visible = True
                 End If
             Catch ex As Exception
                 'Aquí registraría un error en una hipotetica base de datos
             Finally
                 lblConvertido.Visible = True
             End Try
+        End Sub
+
+        Private Sub btnCalcula_IvaApp4_Click(sender As Object, e As EventArgs) Handles btnCalcula_IvaApp4.Click
+            Dim frm As New Application4.App4Form()
+            frm.Show()
         End Sub
     End Class
 End Namespace

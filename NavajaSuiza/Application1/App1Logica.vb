@@ -29,6 +29,7 @@
                 End If
             Catch ex As Exception
                 Return "No has introducido " + vbCrLf + " un valor valido.(" + n.ToString + ")"
+                'Aquí registraría un error en una hipotetica base de datos
             End Try
         End Function
     End Class

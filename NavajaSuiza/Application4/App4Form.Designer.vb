@@ -23,55 +23,98 @@
         'No lo modifique con el editor de código.
         <System.Diagnostics.DebuggerStepThrough()>
         Private Sub InitializeComponent()
-            Me.btnCalcular_Primo = New System.Windows.Forms.Button()
-            Me.lblPrimo = New System.Windows.Forms.Label()
-            Me.tbxPrimo = New System.Windows.Forms.TextBox()
+            Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(App4Form))
+            Me.btnCalcular_Iva = New System.Windows.Forms.Button()
+            Me.lblTotal = New System.Windows.Forms.Label()
+            Me.tbxCalculaIVA = New System.Windows.Forms.TextBox()
+            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+            Me.cbxIVA = New System.Windows.Forms.ComboBox()
+            Me.App4Titulo = New System.Windows.Forms.Label()
+            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
-            'btnCalcular_Primo
+            'btnCalcular_Iva
             '
-            Me.btnCalcular_Primo.Location = New System.Drawing.Point(24, 65)
-            Me.btnCalcular_Primo.Name = "btnCalcular_Primo"
-            Me.btnCalcular_Primo.Size = New System.Drawing.Size(220, 23)
-            Me.btnCalcular_Primo.TabIndex = 0
-            Me.btnCalcular_Primo.Text = "CalcularPrimo"
-            Me.btnCalcular_Primo.UseVisualStyleBackColor = True
+            Me.btnCalcular_Iva.Location = New System.Drawing.Point(126, 241)
+            Me.btnCalcular_Iva.Name = "btnCalcular_Iva"
+            Me.btnCalcular_Iva.Size = New System.Drawing.Size(220, 23)
+            Me.btnCalcular_Iva.TabIndex = 0
+            Me.btnCalcular_Iva.Text = "Calcular IVA"
+            Me.btnCalcular_Iva.UseVisualStyleBackColor = True
             '
-            'lblPrimo
+            'lblTotal
             '
-            Me.lblPrimo.AutoSize = True
-            Me.lblPrimo.Location = New System.Drawing.Point(55, 108)
-            Me.lblPrimo.Name = "lblPrimo"
-            Me.lblPrimo.Size = New System.Drawing.Size(43, 13)
-            Me.lblPrimo.TabIndex = 1
-            Me.lblPrimo.Text = "lblPrimo"
-            Me.lblPrimo.Visible = False
+            Me.lblTotal.AutoSize = True
+            Me.lblTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblTotal.Location = New System.Drawing.Point(99, 276)
+            Me.lblTotal.Name = "lblTotal"
+            Me.lblTotal.Size = New System.Drawing.Size(78, 24)
+            Me.lblTotal.TabIndex = 1
+            Me.lblTotal.Text = "lblTotal"
+            Me.lblTotal.Visible = False
             '
-            'tbxPrimo
+            'tbxCalculaIVA
             '
-            Me.tbxPrimo.Location = New System.Drawing.Point(23, 28)
-            Me.tbxPrimo.MaxLength = 10
-            Me.tbxPrimo.Name = "tbxPrimo"
-            Me.tbxPrimo.Size = New System.Drawing.Size(221, 20)
-            Me.tbxPrimo.TabIndex = 2
+            Me.tbxCalculaIVA.Location = New System.Drawing.Point(126, 205)
+            Me.tbxCalculaIVA.MaxLength = 10
+            Me.tbxCalculaIVA.Name = "tbxCalculaIVA"
+            Me.tbxCalculaIVA.Size = New System.Drawing.Size(155, 20)
+            Me.tbxCalculaIVA.TabIndex = 2
             '
-            'App1Form
+            'PictureBox1
+            '
+            Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+            Me.PictureBox1.Location = New System.Drawing.Point(-2, -2)
+            Me.PictureBox1.Name = "PictureBox1"
+            Me.PictureBox1.Size = New System.Drawing.Size(473, 157)
+            Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+            Me.PictureBox1.TabIndex = 3
+            Me.PictureBox1.TabStop = False
+            '
+            'cbxIVA
+            '
+            Me.cbxIVA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+            Me.cbxIVA.FormattingEnabled = True
+            Me.cbxIVA.Items.AddRange(New Object() {"0%", "4%", "10%", "21%"})
+            Me.cbxIVA.Location = New System.Drawing.Point(287, 205)
+            Me.cbxIVA.Name = "cbxIVA"
+            Me.cbxIVA.Size = New System.Drawing.Size(59, 21)
+            Me.cbxIVA.TabIndex = 4
+            '
+            'App4Titulo
+            '
+            Me.App4Titulo.AutoSize = True
+            Me.App4Titulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.App4Titulo.Location = New System.Drawing.Point(155, 156)
+            Me.App4Titulo.Name = "App4Titulo"
+            Me.App4Titulo.Size = New System.Drawing.Size(174, 32)
+            Me.App4Titulo.TabIndex = 8
+            Me.App4Titulo.Text = "Cálculo IVA"
+            '
+            'App4Form
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(266, 148)
-            Me.Controls.Add(Me.tbxPrimo)
-            Me.Controls.Add(Me.lblPrimo)
-            Me.Controls.Add(Me.btnCalcular_Primo)
-            Me.Name = "App1Form"
+            Me.ClientSize = New System.Drawing.Size(471, 356)
+            Me.Controls.Add(Me.App4Titulo)
+            Me.Controls.Add(Me.cbxIVA)
+            Me.Controls.Add(Me.PictureBox1)
+            Me.Controls.Add(Me.tbxCalculaIVA)
+            Me.Controls.Add(Me.lblTotal)
+            Me.Controls.Add(Me.btnCalcular_Iva)
+            Me.Name = "App4Form"
             Me.Text = "App1Form"
+            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
         End Sub
 
-        Friend WithEvents btnCalcular_Primo As Button
-        Friend WithEvents lblPrimo As Label
-        Friend WithEvents tbxPrimo As TextBox
+        Friend WithEvents btnCalcular_Iva As Button
+        Friend WithEvents lblTotal As Label
+        Friend WithEvents tbxCalculaIVA As TextBox
+        Friend WithEvents PictureBox1 As PictureBox
+        Friend WithEvents cbxIVA As ComboBox
+        Friend WithEvents App4Titulo As Label
     End Class
 End Namespace

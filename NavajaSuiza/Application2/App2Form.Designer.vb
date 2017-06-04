@@ -30,7 +30,8 @@
             Me.btnConvertir_Euros = New System.Windows.Forms.Button()
             Me.lblDinero = New System.Windows.Forms.Label()
             Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-            Me.Label1 = New System.Windows.Forms.Label()
+            Me.App2Titulo = New System.Windows.Forms.Label()
+            Me.btnCalcula_IvaApp4 = New System.Windows.Forms.Button()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
@@ -90,22 +91,33 @@
             Me.PictureBox1.TabIndex = 6
             Me.PictureBox1.TabStop = False
             '
-            'Label1
+            'App2Titulo
             '
-            Me.Label1.AutoSize = True
-            Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.Label1.Location = New System.Drawing.Point(33, 160)
-            Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(359, 32)
-            Me.Label1.TabIndex = 7
-            Me.Label1.Text = "Conversor Pesetas Euros"
+            Me.App2Titulo.AutoSize = True
+            Me.App2Titulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.App2Titulo.Location = New System.Drawing.Point(33, 160)
+            Me.App2Titulo.Name = "App2Titulo"
+            Me.App2Titulo.Size = New System.Drawing.Size(359, 32)
+            Me.App2Titulo.TabIndex = 7
+            Me.App2Titulo.Text = "Conversor Pesetas Euros"
+            '
+            'btnCalcula_IvaApp4
+            '
+            Me.btnCalcula_IvaApp4.Location = New System.Drawing.Point(12, 302)
+            Me.btnCalcula_IvaApp4.Name = "btnCalcula_IvaApp4"
+            Me.btnCalcula_IvaApp4.Size = New System.Drawing.Size(83, 23)
+            Me.btnCalcula_IvaApp4.TabIndex = 8
+            Me.btnCalcula_IvaApp4.Text = "Calcula IVA"
+            Me.btnCalcula_IvaApp4.UseVisualStyleBackColor = True
+            Me.btnCalcula_IvaApp4.Visible = False
             '
             'App2Form
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.ClientSize = New System.Drawing.Size(428, 351)
-            Me.Controls.Add(Me.Label1)
+            Me.Controls.Add(Me.btnCalcula_IvaApp4)
+            Me.Controls.Add(Me.App2Titulo)
             Me.Controls.Add(Me.PictureBox1)
             Me.Controls.Add(Me.lblDinero)
             Me.Controls.Add(Me.btnConvertir_Euros)
@@ -126,6 +138,7 @@
         Friend WithEvents btnConvertir_Euros As Button
         Friend WithEvents lblDinero As Label
         Friend WithEvents PictureBox1 As PictureBox
-        Friend WithEvents Label1 As Label
+        Friend WithEvents App2Titulo As Label
+        Friend WithEvents btnCalcula_IvaApp4 As Button
     End Class
 End Namespace
