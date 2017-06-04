@@ -10,6 +10,7 @@
         ''' Función para comprobar que el número introducido es correcto.
         ''' </summary>
         ''' <param name="PesetasDouble">Número introducido por el usuario</param>
+        ''' <returns>Booleano según el numero pueda o no parsearse. (True/False, respectivamente)</returns>
         Public Function Comprobar(ByVal PesetasDouble As String) As Boolean
             Dim Doble As Double
             Dim Bool As Boolean = True

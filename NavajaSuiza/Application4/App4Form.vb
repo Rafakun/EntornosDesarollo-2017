@@ -29,6 +29,7 @@
         ''' Función para comprobar que el número introducido es correcto.
         ''' </summary>
         ''' <param name="NumeroIVA">Número introducido por el usuario</param>
+        ''' <returns>Booleano según el numero pueda o no parsearse. (True/False, respectivamente)</returns>
         Public Function Comprobar(ByVal NumeroIVA As String) As Boolean
             Dim NumeroPrimo As Integer
             Dim Bool As Boolean = True
@@ -48,14 +49,13 @@
             Try
                 If Comprobar(tbxCalculaIVA.Text) Then
                     Dim IVA = cbxIVA.Text.Replace("%", "")
-                    lblTotal.Text = App4Logica.CalculaPrimo(tbxCalculaIVA.Text, IVA)
+                    lblTotal.Text = App4Logica.CalculaIVA(tbxCalculaIVA.Text, IVA)
                 End If
             Catch ex As Exception
                 'Aquí registraría un error en una hipotetica base de datos
             Finally
                 lblTotal.Visible = True
             End Try
-
         End Sub
     End Class
 End Namespace

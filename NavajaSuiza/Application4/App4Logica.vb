@@ -6,11 +6,12 @@
         Sub New()
         End Sub
         '''<Summary>
-        '''Método Principal, calcula el si el numero del textbox es primo.
+        '''Método Principal, calcula el iva del numero introducido según el IVA seleccionado en el combobox.
         '''</Summary>
         '''<param name="NumeroIVA">Numero a calcular IVA</param>
-        '''<
-        Public Shared Function CalculaPrimo(ByVal NumeroIVA As Double, ByVal IVA As Integer) As String
+        '''<param name="IVA">El tipo de IVA a calcular(0%, 4%, 10% o 21%)</param>
+        '''<returns>Devuelve una cadena de texto con el calculo del IVA según el valor y el IVA establecido.</returns>
+        Public Shared Function CalculaIVA(ByVal NumeroIVA As Double, ByVal IVA As Integer) As String
             Try
                 Dim n As Double = NumeroIVA
                 If NumeroIVA >= 0 Then

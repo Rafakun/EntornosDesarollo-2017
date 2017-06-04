@@ -35,7 +35,7 @@
                 MainForm.TotalCalculaIva = ""
                 Dim Dinero = tbxDinero.Text
                 If Comprobar(Dinero) Then
-                    lblConvertido.Text = Aplicacion.Convertir(Dinero, 0)
+                    lblConvertido.Text = Aplicacion.ConvertirDinero(Dinero, 0)
                     btnCalcula_IvaApp4.Visible = True
                 End If
             Catch ex As Exception
@@ -54,7 +54,7 @@
                 MainForm.TotalCalculaIva = ""
                 Dim Dinero = tbxDinero.Text
                 If Comprobar(Dinero) Then
-                    lblConvertido.Text = Aplicacion.Convertir(Dinero, 1)
+                    lblConvertido.Text = Aplicacion.ConvertirDinero(Dinero, 1)
                     btnCalcula_IvaApp4.Visible = True
                 End If
             Catch ex As Exception
@@ -63,7 +63,11 @@
                 lblConvertido.Visible = True
             End Try
         End Sub
-
+        ''' <summary>
+        ''' Llama a el formulario de la APP4 el cual tiene establecido (si existe) el valor del lblConvertido
+        ''' </summary>
+        ''' <param name="sender"></param>
+        ''' <param name="e"></param>
         Private Sub btnCalcula_IvaApp4_Click(sender As Object, e As EventArgs) Handles btnCalcula_IvaApp4.Click
             Dim frm As New Application4.App4Form()
             frm.Show()
