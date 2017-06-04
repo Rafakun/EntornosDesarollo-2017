@@ -10,7 +10,7 @@
         '''</Summary>
         '''<param name="NumeroIVA">Numero a calcular IVA</param>
         '''<
-        Public Function CalculaPrimo(ByVal NumeroIVA As Double, ByVal IVA As Integer) As String
+        Public Shared Function CalculaPrimo(ByVal NumeroIVA As Double, ByVal IVA As Integer) As String
             Try
                 Dim n As Double = NumeroIVA
                 If NumeroIVA >= 0 Then

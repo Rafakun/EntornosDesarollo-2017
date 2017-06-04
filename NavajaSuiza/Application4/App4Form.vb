@@ -1,9 +1,11 @@
 ﻿Namespace NavajaSuiza.Application4
     Partial Public Class App4Form
         ''' <summary>
-        ''' Declaración de clases
+        ''' Constructor Form
         ''' </summary>
-        Dim Aplicacion As New NavajaSuiza.Application4.App4Logica
+        Public Sub App4Form()
+            InitializeComponent()
+        End Sub
         ''' <summary>
         ''' Declaración de variables locales
         ''' </summary>
@@ -46,7 +48,7 @@
             Try
                 If Comprobar(tbxCalculaIVA.Text) Then
                     Dim IVA = cbxIVA.Text.Replace("%", "")
-                    lblTotal.Text = Aplicacion.CalculaPrimo(tbxCalculaIVA.Text, IVA)
+                    lblTotal.Text = App4Logica.CalculaPrimo(tbxCalculaIVA.Text, IVA)
                 End If
             Catch ex As Exception
                 'Aquí registraría un error en una hipotetica base de datos
