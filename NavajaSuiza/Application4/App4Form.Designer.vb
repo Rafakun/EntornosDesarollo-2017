@@ -35,7 +35,7 @@
             '
             'btnCalcular_Iva
             '
-            Me.btnCalcular_Iva.Location = New System.Drawing.Point(126, 241)
+            Me.btnCalcular_Iva.Location = New System.Drawing.Point(131, 245)
             Me.btnCalcular_Iva.Name = "btnCalcular_Iva"
             Me.btnCalcular_Iva.Size = New System.Drawing.Size(220, 23)
             Me.btnCalcular_Iva.TabIndex = 0
@@ -46,7 +46,7 @@
             '
             Me.lblTotal.AutoSize = True
             Me.lblTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblTotal.Location = New System.Drawing.Point(99, 276)
+            Me.lblTotal.Location = New System.Drawing.Point(104, 280)
             Me.lblTotal.Name = "lblTotal"
             Me.lblTotal.Size = New System.Drawing.Size(78, 24)
             Me.lblTotal.TabIndex = 1
@@ -55,7 +55,7 @@
             '
             'tbxCalculaIVA
             '
-            Me.tbxCalculaIVA.Location = New System.Drawing.Point(126, 205)
+            Me.tbxCalculaIVA.Location = New System.Drawing.Point(131, 209)
             Me.tbxCalculaIVA.MaxLength = 10
             Me.tbxCalculaIVA.Name = "tbxCalculaIVA"
             Me.tbxCalculaIVA.Size = New System.Drawing.Size(155, 20)
@@ -64,7 +64,7 @@
             'PictureBox1
             '
             Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-            Me.PictureBox1.Location = New System.Drawing.Point(-2, -2)
+            Me.PictureBox1.Location = New System.Drawing.Point(4, -2)
             Me.PictureBox1.Name = "PictureBox1"
             Me.PictureBox1.Size = New System.Drawing.Size(473, 157)
             Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -76,7 +76,7 @@
             Me.cbxIVA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
             Me.cbxIVA.FormattingEnabled = True
             Me.cbxIVA.Items.AddRange(New Object() {"0%", "4%", "10%", "21%"})
-            Me.cbxIVA.Location = New System.Drawing.Point(287, 205)
+            Me.cbxIVA.Location = New System.Drawing.Point(292, 209)
             Me.cbxIVA.Name = "cbxIVA"
             Me.cbxIVA.Size = New System.Drawing.Size(59, 21)
             Me.cbxIVA.TabIndex = 4
@@ -85,7 +85,7 @@
             '
             Me.App4Titulo.AutoSize = True
             Me.App4Titulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.App4Titulo.Location = New System.Drawing.Point(155, 156)
+            Me.App4Titulo.Location = New System.Drawing.Point(160, 160)
             Me.App4Titulo.Name = "App4Titulo"
             Me.App4Titulo.Size = New System.Drawing.Size(174, 32)
             Me.App4Titulo.TabIndex = 8
@@ -95,7 +95,7 @@
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(471, 356)
+            Me.ClientSize = New System.Drawing.Size(483, 356)
             Me.Controls.Add(Me.App4Titulo)
             Me.Controls.Add(Me.cbxIVA)
             Me.Controls.Add(Me.PictureBox1)

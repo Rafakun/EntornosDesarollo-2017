@@ -32,6 +32,7 @@
         ''' <param name="e"></param>
         Private Sub btnConvertir_Pesetas_Click(sender As Object, e As EventArgs) Handles btnConvertir_Pesetas.Click
             Try
+                MainForm.TotalCalculaIva = ""
                 Dim Dinero = tbxDinero.Text
                 If Comprobar(Dinero) Then
                     lblConvertido.Text = Aplicacion.Convertir(Dinero, 0)
@@ -50,6 +51,7 @@
         ''' <param name="e"></param>
         Private Sub btnConvertir_Euros_Click(sender As Object, e As EventArgs) Handles btnConvertir_Euros.Click
             Try
+                MainForm.TotalCalculaIva = ""
                 Dim Dinero = tbxDinero.Text
                 If Comprobar(Dinero) Then
                     lblConvertido.Text = Aplicacion.Convertir(Dinero, 1)
