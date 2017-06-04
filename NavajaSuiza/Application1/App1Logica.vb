@@ -10,22 +10,25 @@
         '''</Summary>
         '''<param name="NPrimo">Pasa el número primo desde el textbox del formulario</param>
         Public Function CalculaPrimo(ByVal NPrimo As String) As String
-            Try
-                Dim a As Integer = 0
-                Dim n As Integer = CInt(NPrimo)
+            Dim a As Integer = 0
+            Dim n As Integer = CInt(NPrimo)
 
+            Try
+                If n < 0 Then
+                    Throw New Exception
+                End If
                 For i As Integer = 1 To n + 1
                     If (n Mod i = 0) Then
                         a = a + 1
                     End If
                 Next i
                 If (a <> 2) Then
-                    Return "El número introducido NO es primo."
+                    Return "El número " + n.ToString + vbCrLf + " NO es primo."
                 Else
-                    Return "El número introducido es primo."
+                    Return "El número " + n.ToString + vbCrLf + " es primo."
                 End If
             Catch ex As Exception
-                Return "No has introducido un valor valido."
+                Return "No has introducido " + vbCrLf + " un valor valido.(" + n.ToString + ")"
             End Try
         End Function
     End Class

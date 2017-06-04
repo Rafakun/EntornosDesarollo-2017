@@ -10,7 +10,10 @@
         Public Sub App2Form()
             InitializeComponent()
         End Sub
-
+        ''' <summary>
+        ''' Función para comprobar que el número introducido es correcto.
+        ''' </summary>
+        ''' <param name="NumAConvertir">Número introducido por el usuario</param>
         Public Function Comprobar(ByVal NumAConvertir As String) As Boolean
             Dim Resultado As Double
             Dim Bool As Boolean = True
@@ -28,12 +31,14 @@
         ''' <param name="e"></param>
         Private Sub btnConvertir_Pesetas_Click(sender As Object, e As EventArgs) Handles btnConvertir_Pesetas.Click
             Try
-                If Comprobar(tbxDinero.Text) = True Then
-                    lblConvertido.Text = Aplicacion.Convertir(tbxDinero.Text, 0)
-                    lblConvertido.Visible = True
+                Dim Dinero = tbxDinero.Text
+                If Comprobar(Dinero) Then
+                    lblConvertido.Text = Aplicacion.Convertir(Dinero, 0)
                 End If
             Catch ex As Exception
-                lblConvertido.Text = "Error: " + ex.Message
+                'Aquí registraría un error en una hipotetica base de datos
+            Finally
+                lblConvertido.Visible = True
             End Try
         End Sub
         ''' <summary>
@@ -43,12 +48,14 @@
         ''' <param name="e"></param>
         Private Sub btnConvertir_Euros_Click(sender As Object, e As EventArgs) Handles btnConvertir_Euros.Click
             Try
-                If Comprobar(tbxDinero.Text) = True Then
-                    lblConvertido.Text = Aplicacion.Convertir(tbxDinero.Text, 1)
-                    lblConvertido.Visible = True
+                Dim Dinero = tbxDinero.Text
+                If Comprobar(Dinero) Then
+                    lblConvertido.Text = Aplicacion.Convertir(Dinero, 1)
                 End If
             Catch ex As Exception
-                lblConvertido.Text = "Error: " + ex.Message
+                'Aquí registraría un error en una hipotetica base de datos
+            Finally
+                lblConvertido.Visible = True
             End Try
         End Sub
     End Class

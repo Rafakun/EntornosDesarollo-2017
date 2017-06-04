@@ -36,7 +36,7 @@
             '
             'btnConvertir_Pesetas
             '
-            Me.btnConvertir_Pesetas.Location = New System.Drawing.Point(93, 223)
+            Me.btnConvertir_Pesetas.Location = New System.Drawing.Point(95, 247)
             Me.btnConvertir_Pesetas.Name = "btnConvertir_Pesetas"
             Me.btnConvertir_Pesetas.Size = New System.Drawing.Size(108, 23)
             Me.btnConvertir_Pesetas.TabIndex = 0
@@ -47,7 +47,7 @@
             '
             Me.lblConvertido.AutoSize = True
             Me.lblConvertido.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblConvertido.Location = New System.Drawing.Point(148, 261)
+            Me.lblConvertido.Location = New System.Drawing.Point(125, 285)
             Me.lblConvertido.Name = "lblConvertido"
             Me.lblConvertido.Size = New System.Drawing.Size(133, 24)
             Me.lblConvertido.TabIndex = 1
@@ -56,7 +56,7 @@
             '
             'tbxDinero
             '
-            Me.tbxDinero.Location = New System.Drawing.Point(196, 197)
+            Me.tbxDinero.Location = New System.Drawing.Point(198, 221)
             Me.tbxDinero.MaxLength = 10
             Me.tbxDinero.Name = "tbxDinero"
             Me.tbxDinero.Size = New System.Drawing.Size(144, 20)
@@ -64,7 +64,7 @@
             '
             'btnConvertir_Euros
             '
-            Me.btnConvertir_Euros.Location = New System.Drawing.Point(232, 223)
+            Me.btnConvertir_Euros.Location = New System.Drawing.Point(234, 247)
             Me.btnConvertir_Euros.Name = "btnConvertir_Euros"
             Me.btnConvertir_Euros.Size = New System.Drawing.Size(108, 23)
             Me.btnConvertir_Euros.TabIndex = 3
@@ -74,7 +74,7 @@
             'lblDinero
             '
             Me.lblDinero.AutoSize = True
-            Me.lblDinero.Location = New System.Drawing.Point(115, 200)
+            Me.lblDinero.Location = New System.Drawing.Point(117, 224)
             Me.lblDinero.Name = "lblDinero"
             Me.lblDinero.Size = New System.Drawing.Size(41, 13)
             Me.lblDinero.TabIndex = 4
@@ -94,7 +94,7 @@
             '
             Me.Label1.AutoSize = True
             Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.Label1.Location = New System.Drawing.Point(32, 147)
+            Me.Label1.Location = New System.Drawing.Point(33, 160)
             Me.Label1.Name = "Label1"
             Me.Label1.Size = New System.Drawing.Size(359, 32)
             Me.Label1.TabIndex = 7
@@ -104,7 +104,7 @@
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(428, 324)
+            Me.ClientSize = New System.Drawing.Size(428, 351)
             Me.Controls.Add(Me.Label1)
             Me.Controls.Add(Me.PictureBox1)
             Me.Controls.Add(Me.lblDinero)

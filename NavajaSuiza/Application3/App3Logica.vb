@@ -9,6 +9,7 @@
         '''<Summary>
         '''Método Principal, calcula el si el numero del textbox es primo.
         '''</Summary>
+        '''<param name="Dinero">Valor introducido por el usuario para repartirse en billetes</param>
         Public Shared Function FDivideBilletes(ByVal Dinero As Double) As String
             Dim Billetes As Integer
             Dim TextoBilletes As String = ""
