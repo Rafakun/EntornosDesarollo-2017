@@ -10,13 +10,14 @@
         ''' Declaración de variables locales
         ''' </summary>
         Dim TotalCalculaIva = MainForm.TotalCalculaIva
+
         ''' <summary>
         ''' Se iguala el Textbox a la variable publica "TotalCalculaIva"
         ''' </summary>
         ''' <param name="sender"></param>
         ''' <param name="e"></param>
         Private Sub App4Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            tbxCalculaIVA.Text = TotalCalculaIva
+            txtCalculaIva.Text = TotalCalculaIva
             cbxIVA.SelectedIndex = 0
         End Sub
         ''' <summary>
@@ -28,12 +29,12 @@
         ''' <summary>
         ''' Función para comprobar que el número introducido es correcto.
         ''' </summary>
-        ''' <param name="NumeroIVA">Número introducido por el usuario</param>
+        ''' <param name="numeroIva">Número introducido por el usuario</param>
         ''' <returns>Booleano según el numero pueda o no parsearse. (True/False, respectivamente)</returns>
-        Public Function Comprobar(ByVal NumeroIVA As String) As Boolean
-            Dim NumeroPrimo As Integer
+        Public Function Comprobar(ByVal numeroIva As String) As Boolean
+            Dim numeroPrimo As Integer
             Dim Bool As Boolean = True
-            If Double.TryParse(NumeroIVA, NumeroPrimo) = False Then
+            If Double.TryParse(numeroIva, numeroPrimo) = False Then
                 lblTotal.Text = "El número introducido" + vbCrLf + "no es valido."
                 Bool = False
             End If
@@ -47,9 +48,9 @@
         ''' <param name="e"></param>
         Private Sub btnCalcular_Primo_Click(sender As Object, e As EventArgs) Handles btnCalcular_Iva.Click
             Try
-                If Comprobar(tbxCalculaIVA.Text) Then
+                If Comprobar(txtCalculaIva.Text) Then
                     Dim IVA = cbxIVA.Text.Replace("%", "")
-                    lblTotal.Text = App4Logica.CalculaIVA(tbxCalculaIVA.Text, IVA)
+                    lblTotal.Text = App4Logica.CalculaIVA(txtCalculaIva.Text, IVA)
                 End If
             Catch ex As Exception
                 'Aquí registraría un error en una hipotetica base de datos

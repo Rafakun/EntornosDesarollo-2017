@@ -3,7 +3,7 @@
         ''' <summary>
         ''' Declaración de clases
         ''' </summary>
-        Dim Aplicacion As New NavajaSuiza.Application1.App1Class
+        Dim Aplicacion As New NavajaSuiza.Application1.App1Logica
 
         ''' <summary>
         ''' Constructor Form

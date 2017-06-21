@@ -26,7 +26,7 @@
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(App4Form))
             Me.btnCalcular_Iva = New System.Windows.Forms.Button()
             Me.lblTotal = New System.Windows.Forms.Label()
-            Me.tbxCalculaIVA = New System.Windows.Forms.TextBox()
+            Me.txtCalculaIva = New System.Windows.Forms.TextBox()
             Me.PictureBox1 = New System.Windows.Forms.PictureBox()
             Me.cbxIVA = New System.Windows.Forms.ComboBox()
             Me.App4Titulo = New System.Windows.Forms.Label()
@@ -55,11 +55,11 @@
             '
             'tbxCalculaIVA
             '
-            Me.tbxCalculaIVA.Location = New System.Drawing.Point(131, 209)
-            Me.tbxCalculaIVA.MaxLength = 10
-            Me.tbxCalculaIVA.Name = "tbxCalculaIVA"
-            Me.tbxCalculaIVA.Size = New System.Drawing.Size(155, 20)
-            Me.tbxCalculaIVA.TabIndex = 2
+            Me.txtCalculaIva.Location = New System.Drawing.Point(131, 209)
+            Me.txtCalculaIva.MaxLength = 10
+            Me.txtCalculaIva.Name = "tbxCalculaIVA"
+            Me.txtCalculaIva.Size = New System.Drawing.Size(155, 20)
+            Me.txtCalculaIva.TabIndex = 2
             '
             'PictureBox1
             '
@@ -99,7 +99,7 @@
             Me.Controls.Add(Me.App4Titulo)
             Me.Controls.Add(Me.cbxIVA)
             Me.Controls.Add(Me.PictureBox1)
-            Me.Controls.Add(Me.tbxCalculaIVA)
+            Me.Controls.Add(Me.txtCalculaIva)
             Me.Controls.Add(Me.lblTotal)
             Me.Controls.Add(Me.btnCalcular_Iva)
             Me.Name = "App4Form"
@@ -112,7 +112,7 @@
 
         Friend WithEvents btnCalcular_Iva As Button
         Friend WithEvents lblTotal As Label
-        Friend WithEvents tbxCalculaIVA As TextBox
+        Friend WithEvents txtCalculaIva As TextBox
         Friend WithEvents PictureBox1 As PictureBox
         Friend WithEvents cbxIVA As ComboBox
         Friend WithEvents App4Titulo As Label
