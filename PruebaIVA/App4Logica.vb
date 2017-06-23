@@ -21,7 +21,7 @@
                     Throw New Exception
                 End If
             Catch ex As Exception
-                Return "No has introducido" + vbCrLf + "un valor valido."
+                Return "No has introducido un valor valido."
                 'Aquí registraría un error en una hipotetica base de datos
             End Try
         End Function

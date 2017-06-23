@@ -1,4 +1,4 @@
-﻿Namespace Application3
+﻿Namespace NavajaSuiza.Application3
     Partial Public Class App3Form
         ''' <summary>
         ''' Constructor Form
@@ -34,7 +34,6 @@
                     Throw New Exception
                 End If
             Catch ex As Exception
-                lblBilletes.Text = ex.Message
                 'Aquí registraría un error en una hipotetica base de datos
             Finally
                 lblBilletes.Visible = True
