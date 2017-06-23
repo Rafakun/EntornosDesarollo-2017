@@ -1,4 +1,4 @@
-﻿Namespace NavajaSuiza.Application1
+﻿Namespace Application1
     Public Class App1Logica
         '''<Summary>
         '''Constructor, sin uso.
@@ -8,15 +8,15 @@
         '''<Summary>
         '''Método Principal, calcula el si el numero del textbox es primo.
         '''</Summary>
-        '''<param name="NPrimo">Pasa el número primo desde el textbox del formulario</param>
+        '''<param name="nPrimo">Pasa el número primo desde el textbox del formulario</param>
         '''<returns>Devuelve una cadena de texto según el número calculado sea primo o no.</returns>
-        Public Function CalculaPrimo(ByVal NPrimo As String) As String
+        Public Function CalculaPrimo(ByVal nPrimo As String) As String
             Dim a As Integer = 0
-            Dim n As Integer = CInt(NPrimo)
+            Dim n As Integer = CInt(nPrimo)
 
             Try
                 If n < 0 Then
-                    Throw New Exception
+                    Return "No has introducido " + vbCrLf + " un valor valido.(" + n.ToString + ")"
                 End If
                 For i As Integer = 1 To n + 1
                     If (n Mod i = 0) Then
@@ -29,7 +29,7 @@
                     Return "El número " + n.ToString + vbCrLf + " es primo."
                 End If
             Catch ex As Exception
-                Return "No has introducido " + vbCrLf + " un valor valido.(" + n.ToString + ")"
+                Return ex.Message
                 'Aquí registraría un error en una hipotetica base de datos
             End Try
         End Function

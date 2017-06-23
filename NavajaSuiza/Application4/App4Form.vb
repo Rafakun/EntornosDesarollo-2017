@@ -1,4 +1,4 @@
-﻿Namespace NavajaSuiza.Application4
+﻿Namespace Application4
     Partial Public Class App4Form
         ''' <summary>
         ''' Constructor Form
@@ -9,7 +9,7 @@
         ''' <summary>
         ''' Declaración de variables locales
         ''' </summary>
-        Dim TotalCalculaIva = MainForm.TotalCalculaIva
+        Dim totalCalculaIVA = Main.MainForm.totalCalculaIVA
 
         ''' <summary>
         ''' Se iguala el Textbox a la variable publica "TotalCalculaIva"
@@ -17,7 +17,7 @@
         ''' <param name="sender"></param>
         ''' <param name="e"></param>
         Private Sub App4Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            txtCalculaIva.Text = TotalCalculaIva
+            txtCalculaIva.Text = totalCalculaIVA
             cbxIVA.SelectedIndex = 0
         End Sub
         ''' <summary>
@@ -33,12 +33,12 @@
         ''' <returns>Booleano según el numero pueda o no parsearse. (True/False, respectivamente)</returns>
         Public Function Comprobar(ByVal numeroIva As String) As Boolean
             Dim numeroPrimo As Integer
-            Dim Bool As Boolean = True
+            Dim bool As Boolean = True
             If Double.TryParse(numeroIva, numeroPrimo) = False Then
                 lblTotal.Text = "El número introducido" + vbCrLf + "no es valido."
-                Bool = False
+                bool = False
             End If
-            Return Bool
+            Return bool
         End Function
 
         ''' <summary>
@@ -53,6 +53,7 @@
                     lblTotal.Text = App4Logica.CalculaIVA(txtCalculaIva.Text, IVA)
                 End If
             Catch ex As Exception
+                lblTotal.Text = ex.Message
                 'Aquí registraría un error en una hipotetica base de datos
             Finally
                 lblTotal.Visible = True

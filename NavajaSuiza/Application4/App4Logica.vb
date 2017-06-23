@@ -1,4 +1,4 @@
-﻿Namespace NavajaSuiza.Application4
+﻿Namespace Application4
     Public Class App4Logica
         '''<Summary>
         '''Constructor, sin uso.
@@ -15,13 +15,13 @@
             Try
                 Dim n As Double = numeroIVA
                 If numeroIVA >= 0 Then
-                    Dim Total = numeroIVA + numeroIVA / 100 * IVA
-                    Return "El total con " + IVA.ToString + "% IVA es: " + Total.ToString
+                    Dim total = numeroIVA + numeroIVA / 100 * IVA
+                    Return "El total con " + IVA.ToString + "% IVA es: " + total.ToString
                 Else
-                    Throw New Exception
+                    Return "No has introducido" + vbCrLf + "un valor valido."
                 End If
             Catch ex As Exception
-                Return "No has introducido" + vbCrLf + "un valor valido."
+                Return ex.Message
                 'Aquí registraría un error en una hipotetica base de datos
             End Try
         End Function

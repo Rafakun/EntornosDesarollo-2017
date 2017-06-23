@@ -1,8 +1,12 @@
-﻿Namespace NavajaSuiza
+﻿Namespace Main
     Public Class MainForm
-        Public Sub Hola()
+        ''' <summary>
+        ''' Constructor Form
+        ''' </summary>
+        Public Sub MainForm()
+            InitializeComponent()
         End Sub
-        Public TotalCalculaIva
+        Public totalCalculaIVA
         ''' <summary>
         ''' Abre el formulario de la App1
         ''' </summary>

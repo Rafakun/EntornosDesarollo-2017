@@ -1,4 +1,4 @@
-﻿Namespace NavajaSuiza
+﻿Namespace Main
     <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
     Partial Class MainForm
         Inherits System.Windows.Forms.Form

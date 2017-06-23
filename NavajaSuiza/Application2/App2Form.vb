@@ -1,4 +1,4 @@
-﻿Namespace NavajaSuiza.Application2
+﻿Namespace Application2
     Partial Public Class App2Form
         ''' <summary>
         ''' Declaración de clases
@@ -32,13 +32,14 @@
         ''' <param name="e"></param>
         Private Sub btnConvertir_Pesetas_Click(sender As Object, e As EventArgs) Handles btnConvertir_Pesetas.Click
             Try
-                MainForm.TotalCalculaIva = ""
+                Main.MainForm.totalCalculaIVA = ""
                 Dim Dinero = tbxDinero.Text
                 If Comprobar(Dinero) Then
                     lblConvertido.Text = Aplicacion.ConvertirDinero(Dinero, 0)
                     btnCalcula_IvaApp4.Visible = True
                 End If
             Catch ex As Exception
+                lblConvertido.Text = ex.Message
                 'Aquí registraría un error en una hipotetica base de datos
             Finally
                 lblConvertido.Visible = True
@@ -51,13 +52,14 @@
         ''' <param name="e"></param>
         Private Sub btnConvertir_Euros_Click(sender As Object, e As EventArgs) Handles btnConvertir_Euros.Click
             Try
-                MainForm.TotalCalculaIva = ""
+                Main.MainForm.totalCalculaIVA = ""
                 Dim Dinero = tbxDinero.Text
                 If Comprobar(Dinero) Then
                     lblConvertido.Text = Aplicacion.ConvertirDinero(Dinero, 1)
                     btnCalcula_IvaApp4.Visible = True
                 End If
             Catch ex As Exception
+                lblConvertido.Text = ex.Message
                 'Aquí registraría un error en una hipotetica base de datos
             Finally
                 lblConvertido.Visible = True
