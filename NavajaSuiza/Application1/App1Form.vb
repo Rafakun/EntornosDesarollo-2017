@@ -1,9 +1,9 @@
-﻿Namespace NavajaSuiza.Application1
+﻿Namespace Application1
     Partial Public Class App1Form
         ''' <summary>
         ''' Declaración de clases
         ''' </summary>
-        Dim Aplicacion As New NavajaSuiza.Application1.App1Logica
+        Dim Aplicacion As New App1Logica
 
         ''' <summary>
         ''' Constructor Form
@@ -38,6 +38,7 @@
                     Throw New Exception
                 End If
             Catch ex As Exception
+                lblPrimo.Text = ex.Message
                 'Aquí registraría un error en una hipotetica base de datos
             Finally
                 lblPrimo.Visible = True

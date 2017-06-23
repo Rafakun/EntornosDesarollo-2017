@@ -1,42 +1,44 @@
 ﻿Imports System.Text
 Imports Microsoft.VisualStudio.TestTools.UnitTesting
+Imports NavajaSuiza.Application1.App1Logica
 
 Namespace PruebaNumPrimo
     <TestClass()> Public Class PruebaPrimo
-
+        Dim Apliacacion As New NavajaSuiza.Application1.App1Logica
         <TestMethod()> Public Sub NumeroPrimo()
-            Dim NumeroPrimo As Integer = 3
-            Dim ResultadoFinal As String
-            Dim ResultadoEsperado As String = "El número 3 es primo."
+            Dim numeroPrimo As Integer = 3
+            Dim resultadoFinal As String
+            Dim resultadoEsperado As String = "El número 3" + vbCrLf + " es primo."
 
             ''Se realiza la función con los parametros anteriores
-            ResultadoFinal = NavajaSuiza.Application1.App1Logica.CalculaPrimo(NumeroPrimo)
+            ''ResultadoFinal = NavajaSuiza.Application1.App1Logica.CalculaPrimo(NumeroPrimo)
+            resultadoFinal = Apliacacion.CalculaPrimo(numeroPrimo)
 
             ''Resultado de la prueba
-            Assert.AreEqual(ResultadoEsperado, ResultadoFinal)
+            Assert.AreEqual(resultadoEsperado, resultadoFinal)
         End Sub
         <TestMethod()> Public Sub NumeroNoPrimo()
-            Dim NumeroPrimo As Integer = 4
-            Dim ResultadoFinal As String
-            Dim ResultadoEsperado As String = "El número 4 NO es primo."
+            Dim numeroPrimo As Integer = 4
+            Dim resultadoFinal As String
+            Dim resultadoEsperado As String = "El número 4" + vbCrLf + " NO es primo."
 
             ''Se realiza la función con los parametros anteriores
-            ResultadoFinal = NavajaSuiza.Application1.App1Logica.CalculaPrimo(NumeroPrimo)
+            resultadoFinal = Apliacacion.CalculaPrimo(numeroPrimo)
 
             ''Resultado de la prueba
-            Assert.AreEqual(ResultadoEsperado, ResultadoFinal)
+            Assert.AreEqual(resultadoEsperado, resultadoFinal)
         End Sub
 
         <TestMethod()> Public Sub NumeroNoValido()
-            Dim NumeroPrimo As Integer = -32
-            Dim ResultadoFinal As String
-            Dim ResultadoEsperado As String = "No has introducido un valor valido.(-32)"
+            Dim numeroPrimo As Integer = -32
+            Dim resultadoFinal As String
+            Dim resultadoEsperado As String = "No has introducido " + vbCrLf + " un valor valido.(-32)"
 
             ''Se realiza la función con los parametros anteriores
-            ResultadoFinal = NavajaSuiza.Application1.App1Logica.CalculaPrimo(NumeroPrimo)
+            resultadoFinal = Apliacacion.CalculaPrimo(numeroPrimo)
 
             ''Resultado de la prueba
-            Assert.AreEqual(ResultadoEsperado, ResultadoFinal)
+            Assert.AreEqual(resultadoEsperado, resultadoFinal)
         End Sub
     End Class
 End Namespace

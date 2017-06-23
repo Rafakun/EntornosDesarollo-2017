@@ -1,4 +1,4 @@
-﻿Namespace NavajaSuiza.Application1
+﻿Namespace Application1
     <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
     Partial Public Class App1Form
         Inherits System.Windows.Forms.Form
