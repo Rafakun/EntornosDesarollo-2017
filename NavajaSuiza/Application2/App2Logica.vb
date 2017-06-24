@@ -35,7 +35,7 @@
                     Return redondeado
                 End If
             Catch ex As Exception
-                Return ex.Message
+                Return "Error en la función: " + ex.Message
                 'Aquí registraría un error en una hipotetica base de datos
             End Try
         End Function

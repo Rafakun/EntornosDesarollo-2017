@@ -27,9 +27,9 @@
             Me.btnDivide_Billetes = New System.Windows.Forms.Button()
             Me.lblBilletes = New System.Windows.Forms.Label()
             Me.tbxDinero = New System.Windows.Forms.TextBox()
-            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+            Me.ImagenCabecera = New System.Windows.Forms.PictureBox()
             Me.App3Titulo = New System.Windows.Forms.Label()
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.ImagenCabecera, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'btnDivide_Billetes
@@ -59,15 +59,15 @@
             Me.tbxDinero.Size = New System.Drawing.Size(221, 20)
             Me.tbxDinero.TabIndex = 2
             '
-            'PictureBox1
+            'ImagenCabecera
             '
-            Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-            Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
-            Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(416, 144)
-            Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-            Me.PictureBox1.TabIndex = 3
-            Me.PictureBox1.TabStop = False
+            Me.ImagenCabecera.Image = CType(resources.GetObject("ImagenCabecera.Image"), System.Drawing.Image)
+            Me.ImagenCabecera.Location = New System.Drawing.Point(12, 12)
+            Me.ImagenCabecera.Name = "ImagenCabecera"
+            Me.ImagenCabecera.Size = New System.Drawing.Size(416, 144)
+            Me.ImagenCabecera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+            Me.ImagenCabecera.TabIndex = 3
+            Me.ImagenCabecera.TabStop = False
             '
             'App3Titulo
             '
@@ -85,13 +85,13 @@
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.ClientSize = New System.Drawing.Size(440, 417)
             Me.Controls.Add(Me.App3Titulo)
-            Me.Controls.Add(Me.PictureBox1)
+            Me.Controls.Add(Me.ImagenCabecera)
             Me.Controls.Add(Me.tbxDinero)
             Me.Controls.Add(Me.lblBilletes)
             Me.Controls.Add(Me.btnDivide_Billetes)
             Me.Name = "App3Form"
             Me.Text = "App3Form"
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.ImagenCabecera, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -100,7 +100,7 @@
         Friend WithEvents btnDivide_Billetes As Button
         Friend WithEvents lblBilletes As Label
         Friend WithEvents tbxDinero As TextBox
-        Friend WithEvents PictureBox1 As PictureBox
+        Friend WithEvents ImagenCabecera As PictureBox
         Friend WithEvents App3Titulo As Label
     End Class
 End Namespace

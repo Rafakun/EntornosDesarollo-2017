@@ -27,9 +27,9 @@
             Me.btnCalcular_Primo = New System.Windows.Forms.Button()
             Me.lblPrimo = New System.Windows.Forms.Label()
             Me.tbxPrimo = New System.Windows.Forms.TextBox()
-            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-            Me.Label1 = New System.Windows.Forms.Label()
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.ImagenCabecera = New System.Windows.Forms.PictureBox()
+            Me.App1Titulo = New System.Windows.Forms.Label()
+            CType(Me.ImagenCabecera, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'btnCalcular_Primo
@@ -60,39 +60,39 @@
             Me.tbxPrimo.Size = New System.Drawing.Size(221, 20)
             Me.tbxPrimo.TabIndex = 2
             '
-            'PictureBox1
+            'ImagenCabecera
             '
-            Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-            Me.PictureBox1.Location = New System.Drawing.Point(1, -1)
-            Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(392, 146)
-            Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-            Me.PictureBox1.TabIndex = 7
-            Me.PictureBox1.TabStop = False
+            Me.ImagenCabecera.Image = CType(resources.GetObject("ImagenCabecera.Image"), System.Drawing.Image)
+            Me.ImagenCabecera.Location = New System.Drawing.Point(1, -1)
+            Me.ImagenCabecera.Name = "ImagenCabecera"
+            Me.ImagenCabecera.Size = New System.Drawing.Size(392, 146)
+            Me.ImagenCabecera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+            Me.ImagenCabecera.TabIndex = 7
+            Me.ImagenCabecera.TabStop = False
             '
-            'Label1
+            'App1Titulo
             '
-            Me.Label1.AutoSize = True
-            Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-            Me.Label1.Location = New System.Drawing.Point(21, 148)
-            Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(348, 31)
-            Me.Label1.TabIndex = 8
-            Me.Label1.Text = "Calculador número primo."
+            Me.App1Titulo.AutoSize = True
+            Me.App1Titulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
+            Me.App1Titulo.Location = New System.Drawing.Point(21, 148)
+            Me.App1Titulo.Name = "App1Titulo"
+            Me.App1Titulo.Size = New System.Drawing.Size(348, 31)
+            Me.App1Titulo.TabIndex = 8
+            Me.App1Titulo.Text = "Calculador número primo."
             '
             'App1Form
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.ClientSize = New System.Drawing.Size(393, 327)
-            Me.Controls.Add(Me.Label1)
-            Me.Controls.Add(Me.PictureBox1)
+            Me.Controls.Add(Me.App1Titulo)
+            Me.Controls.Add(Me.ImagenCabecera)
             Me.Controls.Add(Me.tbxPrimo)
             Me.Controls.Add(Me.lblPrimo)
             Me.Controls.Add(Me.btnCalcular_Primo)
             Me.Name = "App1Form"
             Me.Text = "App1Form"
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.ImagenCabecera, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -101,7 +101,7 @@
         Friend WithEvents btnCalcular_Primo As Button
         Friend WithEvents lblPrimo As Label
         Friend WithEvents tbxPrimo As TextBox
-        Friend WithEvents PictureBox1 As PictureBox
-        Friend WithEvents Label1 As Label
+        Friend WithEvents ImagenCabecera As PictureBox
+        Friend WithEvents App1Titulo As Label
     End Class
 End Namespace

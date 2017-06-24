@@ -28,8 +28,8 @@
             Me.MainApp2 = New System.Windows.Forms.Button()
             Me.MainApp3 = New System.Windows.Forms.Button()
             Me.MainApp4 = New System.Windows.Forms.Button()
-            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.ImagenCabecera = New System.Windows.Forms.PictureBox()
+            CType(Me.ImagenCabecera, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'MainApp1
@@ -68,28 +68,28 @@
             Me.MainApp4.Text = "Aplicación 4"
             Me.MainApp4.UseVisualStyleBackColor = True
             '
-            'PictureBox1
+            'ImagenCabecera
             '
-            Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-            Me.PictureBox1.Location = New System.Drawing.Point(12, 2)
-            Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(623, 233)
-            Me.PictureBox1.TabIndex = 4
-            Me.PictureBox1.TabStop = False
+            Me.ImagenCabecera.Image = CType(resources.GetObject("ImagenCabecera.Image"), System.Drawing.Image)
+            Me.ImagenCabecera.Location = New System.Drawing.Point(12, 2)
+            Me.ImagenCabecera.Name = "ImagenCabecera"
+            Me.ImagenCabecera.Size = New System.Drawing.Size(623, 233)
+            Me.ImagenCabecera.TabIndex = 4
+            Me.ImagenCabecera.TabStop = False
             '
             'MainForm
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.ClientSize = New System.Drawing.Size(645, 298)
-            Me.Controls.Add(Me.PictureBox1)
+            Me.Controls.Add(Me.ImagenCabecera)
             Me.Controls.Add(Me.MainApp4)
             Me.Controls.Add(Me.MainApp3)
             Me.Controls.Add(Me.MainApp2)
             Me.Controls.Add(Me.MainApp1)
             Me.Name = "MainForm"
             Me.Text = "MainForm"
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.ImagenCabecera, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub
@@ -98,6 +98,6 @@
         Friend WithEvents MainApp2 As Button
         Friend WithEvents MainApp3 As Button
         Friend WithEvents MainApp4 As Button
-        Friend WithEvents PictureBox1 As PictureBox
+        Friend WithEvents ImagenCabecera As PictureBox
     End Class
 End Namespace

@@ -29,10 +29,10 @@
             Me.tbxDinero = New System.Windows.Forms.TextBox()
             Me.btnConvertir_Euros = New System.Windows.Forms.Button()
             Me.lblDinero = New System.Windows.Forms.Label()
-            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+            Me.ImagenCabecera = New System.Windows.Forms.PictureBox()
             Me.App2Titulo = New System.Windows.Forms.Label()
             Me.btnCalcula_IvaApp4 = New System.Windows.Forms.Button()
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.ImagenCabecera, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'btnConvertir_Pesetas
@@ -81,15 +81,15 @@
             Me.lblDinero.TabIndex = 4
             Me.lblDinero.Text = "Dinero:"
             '
-            'PictureBox1
+            'ImagenCabecera
             '
-            Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-            Me.PictureBox1.Location = New System.Drawing.Point(37, 4)
-            Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(354, 140)
-            Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-            Me.PictureBox1.TabIndex = 6
-            Me.PictureBox1.TabStop = False
+            Me.ImagenCabecera.Image = CType(resources.GetObject("ImagenCabecera.Image"), System.Drawing.Image)
+            Me.ImagenCabecera.Location = New System.Drawing.Point(12, 4)
+            Me.ImagenCabecera.Name = "ImagenCabecera"
+            Me.ImagenCabecera.Size = New System.Drawing.Size(404, 153)
+            Me.ImagenCabecera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+            Me.ImagenCabecera.TabIndex = 6
+            Me.ImagenCabecera.TabStop = False
             '
             'App2Titulo
             '
@@ -118,7 +118,7 @@
             Me.ClientSize = New System.Drawing.Size(428, 351)
             Me.Controls.Add(Me.btnCalcula_IvaApp4)
             Me.Controls.Add(Me.App2Titulo)
-            Me.Controls.Add(Me.PictureBox1)
+            Me.Controls.Add(Me.ImagenCabecera)
             Me.Controls.Add(Me.lblDinero)
             Me.Controls.Add(Me.btnConvertir_Euros)
             Me.Controls.Add(Me.tbxDinero)
@@ -126,7 +126,7 @@
             Me.Controls.Add(Me.btnConvertir_Pesetas)
             Me.Name = "App2Form"
             Me.Text = "App2Form"
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.ImagenCabecera, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -137,7 +137,7 @@
         Friend WithEvents tbxDinero As TextBox
         Friend WithEvents btnConvertir_Euros As Button
         Friend WithEvents lblDinero As Label
-        Friend WithEvents PictureBox1 As PictureBox
+        Friend WithEvents ImagenCabecera As PictureBox
         Friend WithEvents App2Titulo As Label
         Friend WithEvents btnCalcula_IvaApp4 As Button
     End Class

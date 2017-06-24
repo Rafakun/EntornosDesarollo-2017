@@ -27,10 +27,10 @@
             Me.btnCalcular_Iva = New System.Windows.Forms.Button()
             Me.lblTotal = New System.Windows.Forms.Label()
             Me.txtCalculaIva = New System.Windows.Forms.TextBox()
-            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+            Me.ImagenCabecera = New System.Windows.Forms.PictureBox()
             Me.cbxIVA = New System.Windows.Forms.ComboBox()
             Me.App4Titulo = New System.Windows.Forms.Label()
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.ImagenCabecera, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'btnCalcular_Iva
@@ -53,23 +53,23 @@
             Me.lblTotal.Text = "lblTotal"
             Me.lblTotal.Visible = False
             '
-            'tbxCalculaIVA
+            'txtCalculaIva
             '
             Me.txtCalculaIva.Location = New System.Drawing.Point(131, 209)
             Me.txtCalculaIva.MaxLength = 10
-            Me.txtCalculaIva.Name = "tbxCalculaIVA"
+            Me.txtCalculaIva.Name = "txtCalculaIva"
             Me.txtCalculaIva.Size = New System.Drawing.Size(155, 20)
             Me.txtCalculaIva.TabIndex = 2
             '
-            'PictureBox1
+            'ImagenCabecera
             '
-            Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-            Me.PictureBox1.Location = New System.Drawing.Point(4, -2)
-            Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(473, 157)
-            Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-            Me.PictureBox1.TabIndex = 3
-            Me.PictureBox1.TabStop = False
+            Me.ImagenCabecera.Image = CType(resources.GetObject("ImagenCabecera.Image"), System.Drawing.Image)
+            Me.ImagenCabecera.Location = New System.Drawing.Point(4, -2)
+            Me.ImagenCabecera.Name = "ImagenCabecera"
+            Me.ImagenCabecera.Size = New System.Drawing.Size(473, 157)
+            Me.ImagenCabecera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+            Me.ImagenCabecera.TabIndex = 3
+            Me.ImagenCabecera.TabStop = False
             '
             'cbxIVA
             '
@@ -98,13 +98,13 @@
             Me.ClientSize = New System.Drawing.Size(483, 356)
             Me.Controls.Add(Me.App4Titulo)
             Me.Controls.Add(Me.cbxIVA)
-            Me.Controls.Add(Me.PictureBox1)
+            Me.Controls.Add(Me.ImagenCabecera)
             Me.Controls.Add(Me.txtCalculaIva)
             Me.Controls.Add(Me.lblTotal)
             Me.Controls.Add(Me.btnCalcular_Iva)
             Me.Name = "App4Form"
             Me.Text = "App1Form"
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.ImagenCabecera, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -113,7 +113,7 @@
         Friend WithEvents btnCalcular_Iva As Button
         Friend WithEvents lblTotal As Label
         Friend WithEvents txtCalculaIva As TextBox
-        Friend WithEvents PictureBox1 As PictureBox
+        Friend WithEvents ImagenCabecera As PictureBox
         Friend WithEvents cbxIVA As ComboBox
         Friend WithEvents App4Titulo As Label
     End Class
