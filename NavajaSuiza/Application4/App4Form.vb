@@ -35,7 +35,7 @@
             Dim numeroPrimo As Integer
             Dim bool As Boolean = True
             If Double.TryParse(numeroIva, numeroPrimo) = False Then
-                lblTotal.Text = "El número introducido" + vbCrLf + "no es valido."
+                lblTotal.Text = "No has introducido" + vbCrLf + "un valor valido"
                 bool = False
             End If
             Return bool

@@ -15,7 +15,7 @@
             Dim Doble As Double
             Dim Bool As Boolean = True
             If Double.TryParse(PesetasDouble, Doble) = False Then
-                lblBilletes.Text = "El número introducido" + vbCrLf + "no es valido."
+                lblBilletes.Text = "No has introducido" + vbCrLf + "un valor válido."
                 Bool = False
             End If
             Return Bool
@@ -30,8 +30,6 @@
             Try
                 If Comprobar(tbxDinero.Text) Then
                     lblBilletes.Text = App3Logica.FDivideBilletes(tbxDinero.Text)
-                Else
-                    Throw New Exception
                 End If
             Catch ex As Exception
                 lblBilletes.Text = ex.Message

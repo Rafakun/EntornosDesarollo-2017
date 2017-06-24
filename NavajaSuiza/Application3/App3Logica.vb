@@ -11,10 +11,10 @@
         '''</Summary>
         '''<param name="dinero">Valor introducido por el usuario para repartirse en billetes</param>
         '''<returns>Devuelve una cadena de texto con las cantidades de billetes divididos y el tipo de billete.</returns>
-        Public Shared Function FDivideBilletes(ByVal dinero As Double) As String
-            Dim billetes As Integer
+        Public Shared Function FDivideBilletes(ByVal dinero As String) As String
             Dim textoBilletes As String = ""
             Try
+                Dim billetes As Integer
                 If dinero > 0 Then
                     If (dinero >= 10000) Then
                         billetes = Fix(dinero / 10000)
@@ -47,10 +47,10 @@
                         textoBilletes += billetes.ToString + " monedas de 25 pesetas"
                     End If
                 Else
-                    textoBilletes = "No has introducido" + vbCrLf + "un valor valido"
+                    textoBilletes = "No has introducido" + vbCrLf + "un número valido"
                 End If
             Catch ex As Exception
-                Return ex.Message
+                Return "No has introducido" + vbCrLf + "un valor válido."
                 'Aquí registraría un error en una hipotetica base de datos
             End Try
             Return textoBilletes
