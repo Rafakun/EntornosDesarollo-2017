@@ -35,7 +35,7 @@
             Dim numeroPrimo As Integer
             Dim bool As Boolean = True
             If Double.TryParse(numeroIva, numeroPrimo) = False Then
-                lblTotal.Text = "No has introducido" + vbCrLf + "un valor valido"
+                lblTotal.Text = "No has introducido" + vbCrLf + "un valor valido."
                 bool = False
             End If
             Return bool
@@ -46,7 +46,7 @@
         ''' </summary>
         ''' <param name="sender"></param>
         ''' <param name="e"></param>
-        Private Sub btnCalcular_Primo_Click(sender As Object, e As EventArgs) Handles btnCalcular_Iva.Click
+        Private Sub btnCalcula_Iva(sender As Object, e As EventArgs) Handles btnCalcular_Iva.Click
             Try
                 If Comprobar(txtCalculaIva.Text) Then
                     Dim IVA = cbxIVA.Text.Replace("%", "")
